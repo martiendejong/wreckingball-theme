@@ -848,69 +848,179 @@ figure.wp-block-gallery.saaslauncher-gallery figure.wp-block-image {
   --cta-color: #ffe942;           /* Optional highlight/energy */
   --text-color: #eaecef;
 }
+
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   background: var(--neutral-dark);
   color: var(--text-color);
 }
+
 .site-logo img, .wbai-logo {
   filter: drop-shadow(0 0 12px var(--primary-color)) drop-shadow(0 0 6px var(--accent-color));
 }
+
 .wbai-hero h1, .wbai-hero .headline {
   font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
-  font-size: 4rem;
-  font-weight: 900;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 24px var(--primary-color), 0 0 8px var(--accent-color);
-  letter-spacing: 2px;
-  line-height: 1.1;
+  font-weight: 700;
+  text-shadow: 0 0 20px var(--primary-color);
 }
+
 .wbai-hero .subheadline {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  text-align: center;
-  margin: 32px 0 0 0;
-  line-height: 1.5;
+  font-weight: 400;
 }
-.wbai-hero .cta-btn, .wp-block-button__link {
-  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
-  color: var(--neutral-dark);
-  border-radius: 32px;
+
+.wbai-cta-btn {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+.wbai-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px var(--accent-color);
+}
+
+.wbai-cta-badge {
+  background: rgba(155, 48, 255, 0.1) !important;
+  border: 1px solid var(--primary-color) !important;
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+.wbai-cta-primary {
+  background: var(--primary-color) !important;
+  color: var(--neutral-light) !important;
+  transition: all 0.3s ease;
+}
+
+.wbai-cta-primary:hover {
+  background: var(--accent-color) !important;
+  color: var(--neutral-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px var(--accent-color);
+}
+
+.wbai-cta-secondary {
+  background: var(--accent-color) !important;
+  color: var(--neutral-dark) !important;
+  transition: all 0.3s ease;
+}
+
+.wbai-cta-secondary:hover {
+  background: var(--primary-color) !important;
+  color: var(--neutral-light) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px var(--primary-color);
+}
+
+/* Footer Styles */
+.wbai-footer {
+  background: var(--neutral-dark) !important;
+}
+
+.wbai-footer h3 {
   font-family: 'Orbitron', Arial, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding: 20px 48px;
-  box-shadow: 0 0 16px var(--primary-color), 0 0 8px var(--accent-color);
-  text-decoration: none;
-  transition: all 0.2s;
-  display: inline-block;
+  font-weight: 600;
+  color: var(--primary-color) !important;
+  text-shadow: 0 0 10px var(--primary-color);
 }
-.wbai-hero .cta-btn:hover, .wp-block-button__link:hover {
-  background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
-  color: var(--neutral-light);
+
+.wbai-footer a:hover {
+  color: var(--accent-color) !important;
+  text-shadow: 0 0 8px var(--accent-color);
 }
-.section-break {
-  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
-  height: 6px;
-  margin: 48px auto 0 auto;
-  border-radius: 6px;
-  max-width: 600px;
+
+.wbai-footer-list {
+  font-family: 'Montserrat', Arial, sans-serif;
 }
-.wbai-hero img {
-  border-radius: 32px;
-  box-shadow: 0 0 64px var(--primary-color), 0 0 32px var(--accent-color), 0 0 8px var(--cta-color);
-  filter: drop-shadow(0 0 32px var(--accent-color)) drop-shadow(0 0 16px var(--primary-color));
-  background: #191919;
+
+/* Feature Cards */
+.wbai-feature-card {
+  transition: all 0.3s ease;
+  background: var(--neutral-dark) !important;
 }
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .wbai-hero h1, .wbai-hero .headline { font-size: 2.5rem; }
-  .wbai-hero img { max-width: 90vw; }
+
+.wbai-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(155, 48, 255, 0.3);
 }
-@media (max-width: 600px) {
-  .wbai-hero h1, .wbai-hero .headline { font-size: 1.5rem; }
-  .wbai-hero .subheadline { font-size: 1rem; }
-  .wbai-hero img { max-width: 100vw; }
+
+.wbai-feature-card h3 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--neutral-light) !important;
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+.wbai-feature-card p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--text-color) !important;
+}
+
+.wbai-feature-btn {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.wbai-feature-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Section Dividers */
+.wbai-section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), var(--accent-color), transparent);
+  margin: 4rem 0;
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Scroll to Top Button */
+.saaslauncher-scrollto-top .wp-block-button__link {
+  background: var(--accent-color) !important;
+  color: var(--neutral-dark) !important;
+  transition: all 0.3s ease;
+}
+
+.saaslauncher-scrollto-top .wp-block-button__link:hover {
+  background: var(--primary-color) !important;
+  color: var(--neutral-light) !important;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Button Hover Effects */
+.wp-block-button__link:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Social Links */
+.wp-block-social-links a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wbai-hero h1 {
+    font-size: 2rem !important;
+  }
+  
+  .wbai-cta-btn {
+    padding: 15px 30px !important;
+  }
+  
+  .wbai-feature-card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px var(--primary-color); }
+  50% { box-shadow: 0 0 30px var(--accent-color); }
+}
+
+.wbai-logo {
+  animation: glow 3s ease-in-out infinite alternate;
 }
