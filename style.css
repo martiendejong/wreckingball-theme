@@ -1013,6 +1013,27 @@ body {
   .wbai-feature-card {
     margin-bottom: 2rem;
   }
+  
+  /* Hero banner responsive */
+  .wp-block-group.alignfull > div > div {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 0 20px !important;
+  }
+  
+  .wp-block-group.alignfull > div > div > div:first-child {
+    flex: 0 0 100% !important;
+    order: 2;
+  }
+  
+  .wp-block-group.alignfull > div > div > div:last-child {
+    flex: 0 0 100% !important;
+    order: 1;
+  }
+  
+  .wp-block-group.alignfull > div > div > div:last-child h1 {
+    font-size: 2.5rem !important;
+  }
 }
 
 /* Animation Keyframes */
