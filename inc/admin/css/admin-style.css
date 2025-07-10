@@ -1,0 +1,906 @@
+/* Admin Notice */
+.saaslauncher-admin-notice {
+	padding: 0 30px;
+}
+.saaslauncher-admin-notice .info-content h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #2271b1;
+}
+.saaslauncher-admin-notice .info-content .notice-holder h2 {
+	font-size: 20px;
+	margin: 7px 0px 0px;
+}
+.saaslauncher-admin-notice .notice-text p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.saaslauncher-admin-notice .info-content h1 {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 26px;
+	text-transform: capitalize;
+	margin: 5px 0 !important;
+}
+.saaslauncher-admin-notice #install-activate-button {
+	background-color: #00a32a;
+	border-color: #00a32a;
+	color: #fff;
+}
+.saaslauncher-admin-notice #install-activate-button:hover,
+.saaslauncher-admin-notice .button.admin-button.info-button:hover {
+	background: #135e96;
+	border-color: #135e96;
+	color: #fff;
+}
+.saaslauncher-admin-notice #install-activate-button:hover {
+	background-color: #038e26;
+	border-color: #038e26;
+}
+.saaslauncher-admin-notice .button.admin-button.info-button {
+	background: #2271b1;
+	color: #ffffff;
+	padding: 3px 10px;
+	font-weight: 600;
+	border-radius: 4px;
+	border-color: #2271b1;
+}
+.saaslauncher-admin-notice .admin-button.dismiss-notice.btn-notice-dismiss {
+	color: #a4a4a7;
+	display: inline-block;
+	margin: 15px;
+}
+.saaslauncher-admin-notice
+	.admin-button.dismiss-notice.btn-notice-dismiss:hover {
+	color: #d63638;
+}
+.saaslauncher-admin-notice .notice-text {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 5px;
+}
+.saaslauncher-admin-notice.notice {
+	padding-left: 20px;
+}
+.saaslauncher-admin-notice.notice.notice-info
+	.info-content
+	.admin-button.info-button.processing-spinner {
+	padding-right: 50px;
+	position: relative;
+}
+/* Processing spinner */
+.saaslauncher-admin-notice.notice.notice-info
+	.info-content
+	.admin-button.info-button.processing-spinner:before {
+	content: "";
+	right: 5px;
+	top: 5px;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 4px solid #574be8;
+	display: inline-block;
+	border-radius: 50%;
+	box-sizing: border-box;
+	animation: processingLocader 1s ease-in infinite;
+}
+@keyframes processingLocader {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+.installing-all-pluign.info-button {
+	background: #2271b1;
+	margin: 0 0 40px;
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 12px;
+	font-size: 18px;
+}
+.saaslauncher-admin-notice .info-content h3,
+.saaslauncher-admin-notice .info-content .saaslauncher-required-plugin li h4 {
+	margin: 0;
+}
+.saaslauncher-admin-notice .info-content .saaslauncher-required-plugin li {
+	margin: 5px 0;
+}
+.saaslauncher-admin-notice .info-content .saaslauncher-required-plugin {
+	margin: 10px 0 30px;
+}
+.saaslauncher-admin-notice {
+	display: flex;
+}
+.saaslauncher-admin-notice .info-content {
+	width: 65%;
+	display: flex;
+	align-items: center;
+}
+.saaslauncher-admin-notice .theme-hero-screens {
+	text-align: right;
+	width: 35%;
+}
+.saaslauncher-admin-notice .theme-hero-screens img {
+	max-width: 100%;
+	margin: 0px -39px -5px 0;
+}
+
+/* Dashboard */
+.dashboard-about-saaslauncher {
+	@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900");
+
+	--saaslauncher-primary-color: #0c50ff;
+	--saaslauncher-secondary-color: #0ad2ba;
+	--saaslauncher-light-color: #fff;
+	--saaslauncher-dark-color: #000;
+	--saaslauncher-standard-text-color: #333;
+	--saaslauncher-error-color: #ff4c4c;
+
+	& :where(h2, h3, h4, p, figure, ul) {
+		margin: 0;
+	}
+	& ul {
+		list-style: none;
+	}
+
+	margin-top: 22px;
+	width: 98.5%;
+	box-sizing: border-box;
+
+	/* Premium Crown */
+	& #saaslauncher-premium-crown {
+		padding: 4px;
+		background-color: var(--saaslauncher-light-color);
+		border-radius: 100%;
+		vertical-align: bottom;
+	}
+
+	/* Header */
+	& .saaslauncher-about-header {
+		padding: 22px 1.1em;
+		font-size: 32px;
+		font-family: Inter;
+		background-color: var(--saaslauncher-primary-color);
+		display: flex;
+		gap: 18px;
+		align-items: center;
+		font-family: Inter;
+
+		& #saaslauncher-initial {
+			height: 50px;
+			width: 50px;
+			border-radius: 100%;
+			background-color: var(--saaslauncher-secondary-color);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 32px;
+			font-weight: 700;
+		}
+
+		&,
+		& #saaslauncher-name {
+			font-size: 28px;
+			font-weight: 600;
+			color: var(--saaslauncher-light-color);
+		}
+
+		& #saaslauncher-version {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: -6px;
+		}
+	}
+
+	/* Body */
+	& .saaslauncher-about-body {
+		display: flex;
+		min-height: 95vh;
+
+		/* Tabs */
+		& #saaslauncher-tabs {
+			padding: 22px 26px 14px;
+			flex: 1;
+			background-color: var(--saaslauncher-primary-color);
+			color: var(--saaslauncher-light-color);
+			font-family: inherit;
+			font-size: 16px;
+			position: sticky;
+			max-height: 90vh;
+			top: 26px;
+
+			& .saaslauncher-tabs-item {
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: all 0.23s ease-out;
+
+				&.active {
+					color: var(--saaslauncher-secondary-color);
+					cursor: default;
+					transition: all 0.5s ease;
+
+					&:after {
+						content: "\21D2"; /* Unicode for ⇒ */
+						display: inline-block;
+						margin-left: 5px;
+						font-size: 20px;
+						vertical-align: bottom;
+						transition: all 0.5s ease;
+					}
+				}
+			}
+		}
+
+		/* Tab Content */
+		div & #saaslauncher-content {
+			padding: 44px 26px;
+			flex: 6;
+			background-color: var(--saaslauncher-light-color);
+
+			& .saaslauncher-content-item {
+				display: none;
+
+				&.active {
+					display: block;
+				}
+
+				& .plugin-button {
+					font-size: 12px;
+					width: fit-content;
+
+					&.plugin-activate,
+					&.plugin-install-activate {
+						cursor: pointer;
+					}
+				}
+
+				& .processing-spinner {
+					padding-right: 50px;
+					position: relative;
+
+					&::before {
+						content: "";
+						right: 5px;
+						top: 5px;
+						position: absolute;
+						width: 30px;
+						height: 30px;
+						border: 4px solid var(--saaslauncher-secondary-color);
+						display: inline-block;
+						border-radius: 50%;
+						box-sizing: border-box;
+						animation: processingLocader 1s ease-in infinite;
+					}
+				}
+
+				/* Getting started Page */
+				& .saaslauncher-page__getting-started {
+					max-width: 1100px;
+					margin: auto;
+					padding: 20px;
+
+					& #banner-image {
+						max-width: 100%;
+						margin-bottom: 30px;
+
+						& img {
+							width: 100%;
+						}
+					}
+
+					& h3 {
+						font-size: 1.6rem;
+						color: var(--saaslauncher-standard-text-color);
+						margin-bottom: 20px;
+						text-align: center;
+
+						&.feature-caption {
+							font-size: 1.3rem;
+							font-weight: 500;
+							margin-top: 40px;
+						}
+					}
+
+					& p {
+						font-size: 0.9rem;
+						color: #555;
+						line-height: 1.8;
+						margin-bottom: 20px;
+					}
+
+					& ul {
+						list-style-type: none;
+						padding: 0;
+
+						&.feature-holder {
+							margin-bottom: 20px;
+
+							& li {
+								font-size: 0.9rem;
+								color: #555;
+								padding-left: 20px;
+								position: relative;
+							}
+
+							& li:before {
+								content: "✔";
+								position: absolute;
+								left: 0;
+								color: var(--saaslauncher-primary-color);
+								font-weight: bold;
+							}
+						}
+
+						&.feature-highlights {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							gap: 26px;
+
+							@media only screen and (max-width: 1024px) {
+								grid-template-columns: repeat(2, 1fr);
+							}
+
+							& li {
+								/* background-color: #f9f9f9; */
+								border: 1px solid #e0e0e0;
+								border-radius: 8px;
+								padding: 1.5rem;
+								text-align: center;
+								transition: transform 0.3s ease, box-shadow 0.3s ease;
+								box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+								&:hover {
+									transform: translateY(-8px);
+									box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+								}
+							}
+
+							& .feature-icon__wrapper {
+								overflow: hidden;
+
+								& svg {
+									max-width: 48px;
+									max-height: fit-content;
+									width: 48px;
+									width: 54px;
+								}
+							}
+
+							& .feature-title {
+								font-size: 1rem;
+								margin: 4px 0 12px;
+								color: var(--saaslauncher-standard-text-color);
+							}
+
+							& .feature-description {
+								font-size: 14px;
+								color: #666;
+								line-height: 1.3;
+							}
+						}
+
+						&.pro-features li {
+							/* border-color: var(--saaslauncher-secondary-color); */
+							transition: all 0.3s ease;
+							box-shadow: 0 4px 10px rgba(10, 210, 186, 0.15),
+								0 6px 20px rgba(10, 210, 186, 0.1);
+
+							&:hover {
+								color: #fff;
+								transform: translateY(-5px);
+								box-shadow: 0 8px 20px rgba(10, 210, 186, 0.3),
+									0 12px 30px rgba(10, 210, 186, 0.2);
+							}
+						}
+					}
+
+					& a {
+						color: var(--saaslauncher-primary-color);
+						text-decoration: none;
+
+						&:hover {
+							color: var(--saaslauncher-secondary-color);
+							text-decoration: underline;
+						}
+					}
+				}
+
+				/* Recommended Plugins Page */
+				& .saaslauncher-page__recommended-plugins {
+					--saaslauncher-active-plugin-background: #f0f6fc;
+
+					& .recommended-plugins-note {
+						background-color: #f8f9fa;
+						border-left: 5px solid var(--saaslauncher-primary-color);
+						padding: 20px;
+						margin-bottom: 30px;
+
+						& h3 {
+							color: var(--saaslauncher-primary-color);
+							font-size: 20px;
+							margin-bottom: 15px;
+						}
+
+						& p {
+							color: var(--saaslauncher-standard-text-color);
+							font-size: 0.9rem;
+							line-height: 1.6;
+						}
+
+						& strong {
+							color: var(--saaslauncher-primary-color);
+						}
+					}
+
+					& .recommended-plugins {
+						margin-bottom: 16px;
+						display: flex;
+						gap: 10px;
+
+						&.active {
+							background-color: var(--saaslauncher-active-plugin-background);
+							box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1);
+						}
+
+						& .plugin-image {
+							max-width: 66px;
+							max-height: 100%;
+
+							& img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+
+						& .plugin-details {
+							padding: 4px 0;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+
+							& .plugin-name {
+								font-size: 14px;
+								font-family: inherit;
+							}
+
+							& .plugin-desc {
+								font-size: 12px;
+								color: #717171;
+								margin: 2px 0;
+							}
+						}
+					}
+
+					& #saaslauncher-recommend-plugins__installer {
+						padding: 6px 18px;
+					}
+				}
+
+				/* Setup Instructions Page */
+				.saaslauncher-page__setup-instructions {
+					max-width: 900px;
+					margin: auto;
+					padding: 20px;
+					border-radius: 8px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+					/* Heading Styling */
+					& h3 {
+						font-size: 1.6rem;
+						color: var(--saaslauncher-standard-text-color);
+						margin-bottom: 20px;
+						text-align: center;
+					}
+
+					& h4 {
+						font-size: 1rem;
+						color: var(--saaslauncher-standard-text-color);
+						margin-top: 20px;
+						margin-bottom: 10px;
+					}
+
+					/* Step List Styling */
+					& .setup-step ol {
+						list-style-type: decimal;
+						margin-left: 20px;
+						padding: 0;
+					}
+
+					& .setup-step li {
+						font-size: 0.9rem;
+						color: #555;
+						line-height: 1.6;
+						margin-bottom: 10px;
+					}
+
+					/* Emphasis on Strong Text */
+					& strong {
+						font-weight: bold;
+						/* color: var(--saaslauncher-primary-color); */
+						color: #0073e6;
+					}
+				}
+
+				/* Free/Pro Page */
+				.saaslauncher-page__free-pro {
+					max-width: 900px;
+					margin: auto;
+					padding: 2rem;
+					border-radius: 8px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+					& h3 {
+						font-size: 1.6rem;
+						color: var(--saaslauncher-standard-text-color);
+						margin-bottom: 20px;
+						text-align: center;
+					}
+
+					& table {
+						width: 100%;
+						border-collapse: collapse;
+						margin-top: 10px;
+						font-size: 15px;
+
+						& th {
+							background-color: #0c50ff;
+							color: #fff;
+							padding: 12px;
+							text-align: left;
+						}
+
+						& td {
+							padding: 12px;
+							border-bottom: 1px solid #ddd;
+						}
+
+						& tr:nth-child(even) {
+							background-color: #f1f9ff;
+						}
+
+						& tr:hover {
+							background-color: #e6f7ff;
+						}
+
+						& td:first-child {
+							font-weight: bold;
+							color: #0c50ff;
+						}
+					}
+
+					& .comparison-icon__wrapper {
+						width: 20px;
+						height: 20px;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 100%;
+
+						&.tick-icon__wrapper {
+							background-color: var(--saaslauncher-secondary-color);
+						}
+
+						&.cross-icon__wrapper {
+							background-color: var(--saaslauncher-error-color);
+						}
+
+						& svg {
+							fill: var(--saaslauncher-light-color);
+						}
+					}
+
+					& .refund-policy {
+						padding: 20px;
+						border-radius: 8px;
+						margin: 32px auto 10px;
+						border: 1px dotted var(--saaslauncher-primary-color);
+						display: flex;
+						gap: 22px;
+						max-width: 760px;
+
+						& .policy-image {
+							max-width: 320px;
+							max-height: 200px;
+
+							& img {
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
+							}
+						}
+
+						& .policy {
+							align-content: center;
+
+							& h3 {
+								font-size: 1.3rem;
+								margin-bottom: 16px;
+								font-weight: bold;
+							}
+
+							& p {
+								font-size: 16px;
+								color: #555;
+								line-height: 1.5;
+							}
+						}
+					}
+
+					& .checkout-button-container {
+						margin-top: 20px; /* Space between the content and the button */
+						font-size: 16px;
+
+						&.top {
+							text-align: right;
+						}
+
+						&.bottom {
+							text-align: center;
+						}
+
+						& .checkout-button {
+							color: var(--saaslauncher-primary-color); /* White text */
+							text-decoration: underline; /* Remove underline */
+							display: inline-block;
+
+							&:hover {
+								color: var(
+									--saaslauncher-secondary-color
+								); /* Secondary color on hover */
+							}
+						}
+					}
+				}
+
+				/* Demos Page */
+				.saaslauncher-page__demos {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 950px;
+					margin: 0 auto;
+					gap: 13px;
+
+					& h3 {
+						font-size: 22px;
+						line-height: 1.3;
+						font-weight: 500;
+					}
+
+					& .demo-importer__redirection-wrap {
+						margin-top: 20px;
+					}
+
+					& .demo-importer__redirection {
+						background-color: var(--saaslauncher-primary-color);
+						color: var(--saaslauncher-light-color);
+						text-decoration: none;
+						padding: 10px 26px;
+						display: inline-block;
+						border-radius: 4px;
+						font-size: 16px;
+
+						&[disabled="disabled"] {
+							pointer-events: none;
+							background-color: #b3b3b3;
+						}
+
+						&:hover {
+							background-color: var(--saaslauncher-secondary-color);
+						}
+					}
+				}
+
+				/* Support Page */
+				& .saaslauncher-page__support {
+					& .support-banner {
+						background-color: #f9f9f9;
+						padding: 2rem;
+						text-align: center;
+						border-radius: 8px;
+						box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+						max-width: 900px;
+						margin: auto;
+
+						& .support-ticket-btn {
+							display: inline-block;
+							padding: 1rem 2rem;
+							background-color: #007bff;
+							color: white;
+							text-decoration: none;
+							border-radius: 5px;
+							font-size: 0.9rem;
+							transition: background-color 0.3s ease;
+						}
+
+						& .support-ticket-btn:hover {
+							background-color: #0056b3;
+						}
+
+						& .support-note {
+							font-size: 0.9rem;
+							color: #888;
+							margin-top: 1.5rem;
+						}
+
+						& h2 {
+							font-size: 1.6rem;
+							color: var(--saaslauncher-standard-text-color);
+							margin-bottom: 1rem;
+						}
+
+						& p {
+							font-size: 0.9rem;
+							color: #555;
+							margin-bottom: 1rem;
+						}
+					}
+
+					& .review-banner {
+						background-color: #f8f9fa;
+						border-left: 5px solid var(--saaslauncher-primary-color);
+						padding: 20px;
+						margin-top: 40px;
+
+						& h2 {
+							color: var(--saaslauncher-primary-color);
+							font-size: 20px;
+							margin-bottom: 15px;
+						}
+
+						& p {
+							color: var(--saaslauncher-standard-text-color);
+							font-size: 0.9rem;
+							line-height: 1.6;
+						}
+
+						& .review-btn {
+							background-color: var(--saaslauncher-secondary-color);
+							color: var(--saaslauncher-light-color);
+							font-size: 0.9rem;
+							margin-top: 10px;
+							padding: 12px 24px;
+							border-radius: 5px;
+							text-decoration: none;
+							display: inline-block;
+							transition: background-color 0.3s ease;
+						}
+
+						& .review-btn:hover {
+							background-color: var(--saaslauncher-primary-color);
+						}
+
+						& .review-note {
+							font-size: 14px;
+							margin-top: 15px;
+							color: #555;
+						}
+
+						& strong {
+							color: var(--saaslauncher-primary-color);
+						}
+					}
+				}
+
+				/* Activate Licence Page */
+				& .saaslauncher-page__activate-licence {
+					& .pro-unlocked-message {
+						background-color: #4caf50; /* Green background for success */
+						color: white; /* White text for contrast */
+						padding: 10px 20px; /* Padding around the text */
+						border-radius: 4px; /* Rounded corners */
+						font-size: 16px; /* Clean and readable font size */
+						text-align: center; /* Center the text */
+						max-width: 100%; /* Full width for smaller screens */
+						margin: auto; /* Center the message horizontally */
+					}
+
+					& h3 {
+						font-size: 1rem;
+						margin-bottom: 12px;
+					}
+
+					& .guideline-video {
+						max-width: 800px;
+						margin: 32px auto;
+						padding: 2rem;
+						border-radius: 8px;
+						box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+						& .video-wrapper {
+							text-align: center;
+						}
+					}
+				}
+
+				/* Changelog page */
+				& .saaslauncher-page__changelog {
+					max-width: 800px;
+					margin: auto;
+					padding: 2rem;
+					border-radius: 8px;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+					& h2 {
+						border-bottom: 2px solid var(--saaslauncher-primary-color);
+						padding-bottom: 0.5rem;
+						margin-bottom: 1rem;
+						color: var(--saaslauncher-primary-color);
+					}
+
+					& .version {
+						margin-bottom: 2rem;
+
+						& h3 {
+							margin: 0;
+							font-size: 1rem;
+							color: #444;
+						}
+
+						& .date {
+							color: #888;
+							font-size: 0.8rem;
+							margin-bottom: 1rem;
+						}
+					}
+
+					& .changes {
+						padding-left: 1.5rem;
+						list-style: disc;
+
+						& li {
+							margin-bottom: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Plugin Highlighter for licence activation */
+.wp-list-table.plugins
+	.active[data-slug="cozy-addons"]
+	.activate-license
+	.saaslauncher-highlighted {
+	padding: 2px;
+	border: 1px solid transparent;
+	animation: snake-turn 0.8s linear 2;
+	border-radius: 4px;
+}
+
+@keyframes snake-turn {
+	0% {
+		border-top: 1px solid #3498db; /* Start with the top border */
+		border-left: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	33% {
+		border-top: 1px solid transparent;
+		border-left: 1px solid #3498db; /* Left border appears */
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	66% {
+		border-top: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-bottom: 1px solid #3498db; /* Bottom border appears */
+		border-right: 1px solid transparent;
+	}
+	100% {
+		border-top: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid #3498db; /* Right border appears */
+	}
+}
