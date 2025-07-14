@@ -887,26 +887,28 @@ body {
 }
 
 .wbai-cta-primary {
-  background: var(--primary-color) !important;
+  /* background: var(--primary-color) !important; */
+  border-radius: 60px;
   color: var(--neutral-light) !important;
   transition: all 0.3s ease;
 }
 
 .wbai-cta-primary:hover {
-  background: var(--accent-color) !important;
+  /* background: var(--accent-color) !important; */
   color: var(--neutral-dark) !important;
   transform: translateY(-2px);
   box-shadow: 0 0 25px var(--accent-color);
 }
 
 .wbai-cta-secondary {
-  background: var(--accent-color) !important;
+  /* background: var(--accent-color) !important; */
+  border-radius: 60px;
   color: var(--neutral-dark) !important;
   transition: all 0.3s ease;
 }
 
 .wbai-cta-secondary:hover {
-  background: var(--primary-color) !important;
+  /* background: var(--primary-color) !important; */
   color: var(--neutral-light) !important;
   transform: translateY(-2px);
   box-shadow: 0 0 25px var(--primary-color);
