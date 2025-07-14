@@ -1,1 +1,1 @@
-git archive --format zip --output ../wreckingball-ai-theme.zip master
+git archive --format zip --output ../wreckingball-ai-theme.zip --prefix=wreckingball-ai-theme/ master
