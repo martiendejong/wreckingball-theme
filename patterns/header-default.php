@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Title: Header Default
+ * Title: Wreckingball AI Header
  * Slug: saaslauncher/header-default
  * Categories: header
  * Keywords: header, nav, links, button
@@ -10,27 +10,52 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"align":"full","metadata":{"categories":["header"],"patternName":"saaslauncher/header-default","name":"Header Default"},"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"backgroundColor":"black-color","layout":{"type":"constrained","contentSize":"100%"}} -->
-<div class="wp-block-group alignfull has-black-color-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"className":"saaslauncher-header is-style-saaslauncher-sticky-navigation","style":{"spacing":{"padding":{"top":"20px","right":"var:preset|spacing|40","bottom":"20px","left":"var:preset|spacing|40"}},"border":{"bottom":{"width":"0px","style":"none"}}},"layout":{"type":"constrained","contentSize":"1260px"}} -->
-    <div class="wp-block-group saaslauncher-header is-style-saaslauncher-sticky-navigation" style="border-bottom-style:none;border-bottom-width:0px;padding-top:20px;padding-right:var(--wp--preset--spacing--40);padding-bottom:20px;padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"is-style-saaslauncher-boxshadow","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"border":{"radius":"100px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-        <div class="wp-block-group is-style-saaslauncher-boxshadow" style="border-radius:100px;margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-            <div class="wp-block-group"><!-- wp:site-logo {"width":40,"shouldSyncIcon":false,"style":{"color":{"duotone":"unset"}}} /-->
+<!-- wp:group {"align":"full","className":"wbai-header","style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}},"color":{"background":"rgba(0,0,0,0.95)"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group alignfull wbai-header" style="background:rgba(0,0,0,0.95);margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;backdrop-filter:blur(10px);position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid rgba(0,207,255,0.2);">
+  
+  <!-- wp:group {"className":"wbai-header-content","style":{"spacing":{"padding":{"top":"15px","right":"40px","bottom":"15px","left":"40px"}}},"layout":{"type":"constrained","contentSize":"1200px"}} -->
+  <div class="wp-block-group wbai-header-content" style="padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;">
+    
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}}} -->
+    <div class="wp-block-group" style="display:flex;align-items:center;justify-content:space-between;gap:0;">
+      
+      <!-- Logo and Brand -->
+      <!-- wp:group {"style":{"spacing":{"blockGap":"15px"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}}} -->
+      <div class="wp-block-group" style="display:flex;align-items:center;gap:15px;">
+        <!-- wp:site-logo {"width":45,"shouldSyncIcon":false,"style":{"color":{"duotone":"unset"}}} /-->
+        <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"none","letterSpacing":"0px","fontSize":"24px","lineHeight":"1"},"elements":{"link":{"color":{"text":"#00CFFF"},":hover":{"color":{"text":"#FF0066"}}}},"spacing":{"margin":{"top":"0px"}}}} /-->
+      </div>
+      <!-- /wp:group -->
 
-                <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"none","letterSpacing":"0px","fontSize":"28px","lineHeight":"1"},"elements":{"link":{"color":{"text":"var:preset|color|light-color"},":hover":{"color":{"text":"var:preset|color|secondary"}}}},"spacing":{"margin":{"top":"0px"}}}} /-->
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:navigation {"textColor":"background","overlayBackgroundColor":"secondary-bg","overlayTextColor":"heading-color","metadata":{"ignoredHookedBlocks":["woocommerce/customer-account","woocommerce/mini-cart"]},"className":"saaslauncher-navigation","style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"500","lineHeight":"2"},"spacing":{"blockGap":"24px"}},"fontSize":"normal","layout":{"type":"flex","justifyContent":"center"}} /-->
-
-            <!-- wp:buttons {"className":"is-style-button-zoom-on-hover","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"}}}} -->
-            <div class="wp-block-buttons is-style-button-zoom-on-hover"><!-- wp:button {"gradient":"gradient-twelve","className":"is-style-button-hover-light-bgcolor","style":{"border":{"radius":"100px"},"spacing":{"padding":{"left":"24px","right":"24px","top":"16px","bottom":"16px"}},"typography":{"fontSize":"16px"}}} -->
-                <div class="wp-block-button is-style-button-hover-light-bgcolor"><a class="wp-block-button__link has-gradient-twelve-gradient-background has-background has-custom-font-size wp-element-button" style="border-radius:100px;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px;font-size:16px"><?php esc_html_e('Signup Today', 'saaslauncher') ?></a></div>
-                <!-- /wp:button -->
-            </div>
-            <!-- /wp:buttons -->
+      <!-- Navigation Menu -->
+      <!-- wp:group {"className":"wbai-navigation","style":{"spacing":{"blockGap":"40px"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}}} -->
+      <div class="wp-block-group wbai-navigation" style="display:flex;align-items:center;gap:40px;">
+        
+        <!-- wp:group {"style":{"spacing":{"blockGap":"30px"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}}} -->
+        <div class="wp-block-group" style="display:flex;align-items:center;gap:30px;">
+          <a href="#home" class="wbai-nav-link" style="color:#ffffff;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:16px;font-weight:500;transition:all 0.3s ease;position:relative;">Home</a>
+          <a href="#about" class="wbai-nav-link" style="color:#ffffff;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:16px;font-weight:500;transition:all 0.3s ease;position:relative;">About</a>
+          <a href="#services" class="wbai-nav-link" style="color:#ffffff;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:16px;font-weight:500;transition:all 0.3s ease;position:relative;">Services</a>
+          <a href="#portfolio" class="wbai-nav-link" style="color:#ffffff;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:16px;font-weight:500;transition:all 0.3s ease;position:relative;">Portfolio</a>
+          <a href="#contact" class="wbai-nav-link" style="color:#ffffff;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:16px;font-weight:500;transition:all 0.3s ease;position:relative;">Contact</a>
         </div>
         <!-- /wp:group -->
+
+        <!-- CTA Button -->
+        <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}}} -->
+        <div class="wp-block-group" style="display:flex;align-items:center;gap:0;">
+          <a href="#demo" class="wbai-cta-btn" style="background:linear-gradient(90deg, #00CFFF 0%, #FF0066 100%);color:#000000;text-decoration:none;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:14px;font-weight:700;padding:12px 24px;border-radius:25px;transition:all 0.3s ease;box-shadow:0 0 20px rgba(0,207,255,0.3);">GET STARTED</a>
+        </div>
+        <!-- /wp:group -->
+
+      </div>
+      <!-- /wp:group -->
+
     </div>
     <!-- /wp:group -->
+
+  </div>
+  <!-- /wp:group -->
+
 </div>
 <!-- /wp:group -->

@@ -9,18 +9,19 @@
       "customDuotone": true,
       "link": true,
       "palette": [
-        { "slug": "primary", "color": "#A259FF", "name": "Neon Purple" },
-        { "slug": "secondary", "color": "#00CFFF", "name": "Neon Blue" },
+        { "slug": "primary", "color": "#00CFFF", "name": "Neon Blue" },
+        { "slug": "secondary", "color": "#FF0066", "name": "Neon Pink" },
         { "slug": "accent", "color": "#E5E5E5", "name": "Chrome" },
         { "slug": "black-color", "color": "#000000", "name": "Black" },
         { "slug": "white-color", "color": "#FFFFFF", "name": "White" },
         { "slug": "background", "color": "#101010", "name": "Background" },
         { "slug": "background-alt", "color": "#191919", "name": "Background Alt" },
-        { "slug": "heading-color", "color": "#A259FF", "name": "Heading Neon Purple" },
+        { "slug": "heading-color", "color": "#00CFFF", "name": "Heading Neon Blue" },
         { "slug": "foreground", "color": "#E5E5E5", "name": "Foreground Chrome" },
         { "slug": "border-color", "color": "#00CFFF", "name": "Border Neon Blue" },
         { "slug": "meta-color", "color": "#B9B5BD", "name": "Meta Color" },
         { "slug": "sticky-bg-color", "color": "#000000eb", "name": "Sticky Background Color" },
+        { "slug": "neon-pink", "color": "#FF0066", "name": "Neon Pink" },
         { "color": "#ffffff00", "name": "Transparent", "slug": "transparent" }
       ],
       "duotone": [
@@ -31,9 +32,10 @@
         { "colors": ["#00CFFF", "#FFFFFF"], "slug": "blue-white", "name": "Blue White" }
       ],
       "gradients": [
-        { "gradient": "linear-gradient(90deg, #A259FF 0%, #00CFFF 100%)", "name": "Neon Gradient", "slug": "neon-gradient" },
+        { "gradient": "linear-gradient(90deg, #00CFFF 0%, #FF0066 100%)", "name": "Neon Blue to Pink", "slug": "neon-gradient" },
         { "gradient": "radial-gradient(circle, #A259FF 0%, #101010 100%)", "name": "Purple Glow", "slug": "purple-glow" },
         { "gradient": "radial-gradient(circle, #00CFFF 0%, #101010 100%)", "name": "Blue Glow", "slug": "blue-glow" },
+        { "gradient": "radial-gradient(circle, #FF0066 0%, #101010 100%)", "name": "Pink Glow", "slug": "pink-glow" },
         { "gradient": "linear-gradient(90deg, #E5E5E5 0%, #A259FF 100%)", "name": "Chrome to Purple", "slug": "chrome-purple" }
       ]
     },

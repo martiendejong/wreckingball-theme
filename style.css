@@ -1047,3 +1047,174 @@ body {
 .wbai-logo {
   animation: glow 3s ease-in-out infinite alternate;
 }
+
+/* Wreckingball AI Hero Section Styles */
+.wbai-hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wbai-wrecking-ball {
+  animation: float 6s ease-in-out infinite;
+}
+
+.wbai-ball {
+  animation: rotate 20s linear infinite;
+}
+
+.wbai-ball:hover {
+  animation-play-state: paused;
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 60px rgba(0,207,255,0.6);
+}
+
+.wbai-btn-primary:hover {
+  background: #00B8E6 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0,207,255,0.6) !important;
+}
+
+.wbai-btn-secondary:hover {
+  background: rgba(0,207,255,0.1) !important;
+  border-color: #00B8E6 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0,207,255,0.4) !important;
+}
+
+.wbai-bg-effects div {
+  animation: pulse 4s ease-in-out infinite alternate;
+}
+
+.wbai-bg-effects div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wbai-bg-effects div:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.wbai-bg-effects div:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.wbai-bg-effects div:nth-child(4) {
+  animation-delay: 3s;
+}
+
+/* New Animation Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 0.6; transform: scale(1.1); }
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+  .wbai-hero-section .wp-block-group > div > div {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 0 20px !important;
+  }
+  
+  .wbai-wrecking-ball {
+    flex: 0 0 300px !important;
+    order: 2;
+  }
+  
+  .wbai-wrecking-ball > div {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  
+  .wbai-ball {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .wbai-hero-content {
+    order: 1;
+    text-align: center !important;
+  }
+  
+  .wbai-hero-content h1 {
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
+  
+  .wbai-hero-content p {
+    text-align: center !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .wbai-hero-content > div {
+    justify-content: center !important;
+  }
+}
+
+/* Wreckingball AI Header Styles */
+.wbai-header {
+  transition: all 0.3s ease;
+}
+
+.wbai-header.scrolled {
+  background: rgba(0,0,0,0.98) !important;
+  box-shadow: 0 2px 20px rgba(0,207,255,0.1);
+}
+
+.wbai-nav-link {
+  position: relative;
+}
+
+.wbai-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00CFFF 0%, #FF0066 100%);
+  transition: width 0.3s ease;
+}
+
+.wbai-nav-link:hover::after {
+  width: 100%;
+}
+
+.wbai-nav-link:hover {
+  color: #00CFFF !important;
+  text-shadow: 0 0 10px rgba(0,207,255,0.5);
+}
+
+.wbai-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0,207,255,0.5) !important;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .wbai-navigation {
+    display: none !important;
+  }
+  
+  .wbai-header-content > div {
+    justify-content: center !important;
+  }
+  
+  .wbai-header-content > div > div:first-child {
+    flex: 1;
+  }
+  
+  .wbai-header-content > div > div:last-child {
+    display: none !important;
+  }
+}

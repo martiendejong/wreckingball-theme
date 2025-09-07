@@ -4,39 +4,63 @@
  * Slug: wreckingball-ai/banner-hero
  * Categories: wreckingball-hero
  */
-$wbai_url = trailingslashit(get_template_directory_uri());
-$wbai_images = array(
-    $wbai_url . 'assets/images/black2.png', // Use the new hero image
-);
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}},"color":{"background":"#141414"}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
-<div class="wp-block-group alignfull" style="background: linear-gradient(120deg, #9B30FF 0%, #00FFF7 100%); margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
-  <div style="background:rgba(20,20,20,0.98);border-radius:0 0 32px 32px;box-shadow:0 0 64px #9B30FF44,0 0 32px #00FFF744;padding:70px 0 70px 0;max-width:950px;margin:0 0 0 70px;">  <!-- slightly increased max-width, padding, and left margin -->
-    <div style="display:flex;align-items:center;justify-content:center;gap:100px;max-width:900px;margin:0 auto;padding:0 18px;"> <!-- slightly increased gap and padding -->
-      <!-- Left side: Hero Image -->
-      <div style="flex:0 0 260px;display:flex;justify-content:center;align-items:center;"> <!-- slightly larger image -->
-        <div style="background:radial-gradient(circle at 50% 50%, #00FFF7 0%, #191919 80%);border-radius:32px;box-shadow:0 0 36px #00FFF7,0 0 18px #9B30FF,0 0 18px #00FFF7;display:flex;align-items:center;justify-content:center;width:260px;height:260px;">
-          <img src="<?php echo esc_url($wbai_images[0]) ?>" alt="Wreckingball AI Hero" style="width:220px;height:220px;object-fit:cover;border-radius:20px;box-shadow:0 0 14px #00FFF7,0 0 7px #9B30FF;" />
+<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}},"color":{"background":"#000000"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group alignfull wbai-hero-section" style="background: #000000; margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;position:relative;overflow:hidden;">
+  
+  <!-- Background Effects -->
+  <div class="wbai-bg-effects" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;">
+    <!-- Blue light streaks -->
+    <div style="position:absolute;top:20%;left:10%;width:300px;height:200px;background:radial-gradient(ellipse, rgba(0,207,255,0.3) 0%, transparent 70%);filter:blur(40px);"></div>
+    <div style="position:absolute;bottom:30%;right:20%;width:250px;height:150px;background:radial-gradient(ellipse, rgba(0,207,255,0.2) 0%, transparent 70%);filter:blur(30px);"></div>
+    
+    <!-- Pink light streaks -->
+    <div style="position:absolute;top:10%;right:15%;width:400px;height:300px;background:radial-gradient(ellipse, rgba(255,0,102,0.4) 0%, transparent 70%);filter:blur(50px);"></div>
+    <div style="position:absolute;bottom:20%;left:5%;width:200px;height:100px;background:radial-gradient(ellipse, rgba(255,0,102,0.3) 0%, transparent 70%);filter:blur(35px);"></div>
+  </div>
+
+  <!-- Main Content Container -->
+  <div style="position:relative;z-index:2;padding:80px 0;max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:60px;padding:0 40px;">
+      
+      <!-- Left Side: 3D Wrecking Ball -->
+      <div class="wbai-wrecking-ball" style="flex:0 0 400px;display:flex;justify-content:center;align-items:center;position:relative;">
+        <div style="position:relative;width:350px;height:350px;">
+          <!-- Chain -->
+          <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:4px;height:120px;background:linear-gradient(to bottom, #333 0%, #666 50%, #333 100%);border-radius:2px;box-shadow:0 0 10px rgba(0,207,255,0.3);"></div>
+          
+          <!-- Wrecking Ball -->
+          <div class="wbai-ball" style="position:absolute;top:120px;left:50%;transform:translateX(-50%);width:200px;height:200px;background:linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%);border-radius:50%;box-shadow:inset 0 0 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,207,255,0.4);position:relative;overflow:hidden;">
+            <!-- Hexagonal facets with neon glow -->
+            <div style="position:absolute;top:20%;left:15%;width:30px;height:30px;background:rgba(0,207,255,0.8);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 15px rgba(0,207,255,0.9);"></div>
+            <div style="position:absolute;top:40%;left:25%;width:25px;height:25px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 12px rgba(0,207,255,0.7);"></div>
+            <div style="position:absolute;top:60%;left:35%;width:20px;height:20px;background:rgba(0,207,255,0.7);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 10px rgba(0,207,255,0.8);"></div>
+            <div style="position:absolute;top:30%;right:20%;width:28px;height:28px;background:rgba(0,207,255,0.5);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 14px rgba(0,207,255,0.6);"></div>
+            <div style="position:absolute;bottom:25%;right:30%;width:22px;height:22px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 11px rgba(0,207,255,0.7);"></div>
+          </div>
         </div>
       </div>
       
-      <!-- Right side: Text Content (Centered) -->
-      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;max-width:400px;"> <!-- slightly increased max-width -->
-        <h1 style="font-family:'Orbitron','Montserrat',Arial,sans-serif;font-size:2rem;font-weight:900;color:#fff;text-align:center;text-shadow:0 0 14px #9B30FF,0 0 6px #00FFF7;letter-spacing:1.3px;line-height:1.1;max-width:340px;margin:0 0 20px 0;">
-          Smash Through<br>Bottlenecks with <span style="color:#00FFF7;text-shadow:0 0 8px #00FFF7;">AI</span>.<br>Work Smarter.
+      <!-- Right Side: Text Content -->
+      <div class="wbai-hero-content" style="flex:1;display:flex;flex-direction:column;justify-content:center;max-width:500px;">
+        <h1 style="font-family:'Inter','Montserrat',Arial,sans-serif;font-size:3.5rem;font-weight:900;color:#00CFFF;text-align:left;text-shadow:0 0 20px rgba(0,207,255,0.8);letter-spacing:-0.02em;line-height:1.1;margin:0 0 30px 0;">
+          SMASH THROUGH<br>AI BOTTLENECKS
         </h1>
-        <div style="font-size:1.2rem;font-weight:700;color:#ffe942;text-shadow:0 0 5px #ffe942;margin-bottom:16px;text-align:center;width:100%;">No Limits.</div>
-        <p style="font-family:'Montserrat',Arial,sans-serif;font-size:1.15rem;color:#eaecef;text-align:center;max-width:320px;margin:0 0 28px 0;line-height:1.4;">
-          Wreckingball AI is your digital wrecking ball: break free from old business, automate everything, and accelerate with seamless, bold AI integration.
+        
+        <p style="font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.3rem;color:#ffffff;text-align:left;line-height:1.5;margin:0 0 40px 0;font-weight:400;">
+          Wreckingball.ai is your digital force—precision-engineered to break down barriers and automate everything.
         </p>
-        <div style="display:flex;gap:10px;flex-wrap:nowrap;align-items:center;justify-content:center;width:100%;margin-top:8px;"> <!-- center buttons under text, smaller size -->
-          <a href="#demo" style="background:linear-gradient(90deg,#9B30FF 0%,#00FFF7 100%);color:#141414;font-family:'Orbitron',Arial,sans-serif;font-size:0.95rem;font-weight:700;padding:8px 18px;border-radius:22px;box-shadow:0 0 8px #9B30FF88,0 0 4px #00FFF788;text-decoration:none;transition:all 0.2s;display:inline-block;white-space:nowrap;">See Wreckingball AI in Action</a>
-          <!-- <a href="#contact" style="background:linear-gradient(90deg,#00FFF7 0%,#9B30FF 100%);color:#fff;font-family:'Montserrat',Arial,sans-serif;font-size:0.95rem;font-weight:700;padding:8px 18px;border-radius:22px;box-shadow:0 0 8px #00FFF788,0 0 4px #9B30FF88;text-decoration:none;transition:all 0.2s;display:inline-block;white-space:nowrap;">Book a Demo</a> -->
+        
+        <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
+          <a href="#contact" class="wbai-btn-primary" style="background:#00CFFF;color:#000000;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.4);">
+            CONTACT US
+          </a>
+          <a href="#quote" class="wbai-btn-secondary" style="background:transparent;color:#ffffff;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border:2px solid #00CFFF;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.2);">
+            GET A QUOTATION
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Neon gradient divider -->
-  <div class="section-break" style="background:linear-gradient(90deg,#9B30FF 0%,#00FFF7 100%);height:6px;margin:48px auto 0 auto;border-radius:6px;max-width:600px;"></div>
 </div>
 <!-- /wp:group -->
