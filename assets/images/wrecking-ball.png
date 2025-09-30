@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wreckingball AI Theme Preview</title>
+    <style>
+        /* Wreckingball AI Hero Section Styles */
+        .wbai-hero-section {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+        }
+        .wbai-wrecking-ball {
+          animation: float 6s ease-in-out infinite;
+        }
+        .wbai-ball {
+          animation: rotate 20s linear infinite;
+        }
+        .wbai-ball:hover {
+          animation-play-state: paused;
+          transform: translateX(-50%) scale(1.05);
+          box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 60px rgba(0,207,255,0.6);
+        }
+        .wbai-btn-primary:hover {
+          background: #00B8E6 !important;
+          transform: translateY(-2px);
+          box-shadow: 0 0 30px rgba(0,207,255,0.6) !important;
+        }
+        .wbai-btn-secondary:hover {
+          background: rgba(0,207,255,0.1) !important;
+          border-color: #00B8E6 !important;
+          transform: translateY(-2px);
+          box-shadow: 0 0 30px rgba(0,207,255,0.4) !important;
+        }
+        .wbai-bg-effects div {
+          animation: pulse 4s ease-in-out infinite alternate;
+        }
+        .wbai-bg-effects div:nth-child(1) { animation-delay: 0s; }
+        .wbai-bg-effects div:nth-child(2) { animation-delay: 1s; }
+        .wbai-bg-effects div:nth-child(3) { animation-delay: 2s; }
+        .wbai-bg-effects div:nth-child(4) { animation-delay: 3s; }
+        
+        /* New Animation Keyframes */
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        @keyframes rotate {
+          0% { transform: translateX(-50%) rotate(0deg); }
+          100% { transform: translateX(-50%) rotate(360deg); }
+        }
+        @keyframes pulse {
+          0% { opacity: 0.3; transform: scale(1); }
+          100% { opacity: 0.6; transform: scale(1.1); }
+        }
+        
+        /* Responsive Design for Hero Section */
+        @media (max-width: 768px) {
+          .wbai-hero-section .wp-block-group {
+            flex-direction: column !important;
+            gap: 40px !important;
+            padding: 0 20px !important;
+          }
+          .wbai-wrecking-ball {
+            flex: none !important;
+            width: 100% !important;
+          }
+          .wbai-hero-content h1 {
+            font-size: 2.5rem !important;
+            text-align: center !important;
+          }
+          .wbai-hero-content p {
+            font-size: 1.1rem !important;
+            text-align: center !important;
+          }
+          .wbai-hero-content div {
+            justify-content: center !important;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="wp-block-group alignfull wbai-hero-section" style="background: #000000; margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;position:relative;overflow:hidden;">
+      <!-- Background Effects -->
+      <div class="wbai-bg-effects" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;">
+        <!-- Blue light streaks -->
+        <div style="position:absolute;top:20%;left:10%;width:300px;height:200px;background:radial-gradient(ellipse, rgba(0,207,255,0.3) 0%, transparent 70%);filter:blur(40px);"></div>
+        <div style="position:absolute;bottom:30%;right:20%;width:250px;height:150px;background:radial-gradient(ellipse, rgba(0,207,255,0.2) 0%, transparent 70%);filter:blur(30px);"></div>
+        <!-- Pink light streaks -->
+        <div style="position:absolute;top:10%;right:15%;width:400px;height:300px;background:radial-gradient(ellipse, rgba(255,0,102,0.4) 0%, transparent 70%);filter:blur(50px);"></div>
+        <div style="position:absolute;bottom:20%;left:5%;width:200px;height:100px;background:radial-gradient(ellipse, rgba(255,0,102,0.3) 0%, transparent 70%);filter:blur(35px);"></div>
+      </div>
+      <!-- Main Content Container -->
+      <div style="position:relative;z-index:2;padding:80px 0;max-width:1200px;margin:0 auto;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:60px;padding:0 40px;">
+          <!-- Left Side: 3D Wrecking Ball -->
+          <div class="wbai-wrecking-ball" style="flex:0 0 400px;display:flex;justify-content:center;align-items:center;position:relative;">
+            <div style="position:relative;width:350px;height:350px;">
+              <!-- Chain -->
+              <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:4px;height:120px;background:linear-gradient(to bottom, #333 0%, #666 50%, #333 100%);border-radius:2px;box-shadow:0 0 10px rgba(0,207,255,0.3);"></div>
+              <!-- Wrecking Ball -->
+              <div class="wbai-ball" style="position:absolute;top:120px;left:50%;transform:translateX(-50%);width:200px;height:200px;background:linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%);border-radius:50%;box-shadow:inset 0 0 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,207,255,0.4);position:relative;overflow:hidden;">
+                <!-- Hexagonal facets with neon glow -->
+                <div style="position:absolute;top:20%;left:15%;width:30px;height:30px;background:rgba(0,207,255,0.8);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 15px rgba(0,207,255,0.9);"></div>
+                <div style="position:absolute;top:40%;left:25%;width:25px;height:25px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 12px rgba(0,207,255,0.7);"></div>
+                <div style="position:absolute;top:60%;left:35%;width:20px;height:20px;background:rgba(0,207,255,0.7);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 10px rgba(0,207,255,0.8);"></div>
+                <div style="position:absolute;top:30%;right:20%;width:28px;height:28px;background:rgba(0,207,255,0.5);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 14px rgba(0,207,255,0.6);"></div>
+                <div style="position:absolute;bottom:25%;right:30%;width:22px;height:22px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 11px rgba(0,207,255,0.7);"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side: Text Content -->
+          <div class="wbai-hero-content" style="flex:1;display:flex;flex-direction:column;justify-content:center;max-width:500px;">
+            <h1 style="font-family:'Inter','Montserrat',Arial,sans-serif;font-size:3.5rem;font-weight:900;color:#00CFFF;text-align:left;text-shadow:0 0 20px rgba(0,207,255,0.8);letter-spacing:-0.02em;line-height:1.1;margin:0 0 30px 0;">
+              SMASH THROUGH<br>AI BOTTLENECKS
+            </h1>
+            <p style="font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.3rem;color:#ffffff;text-align:left;line-height:1.5;margin:0 0 40px 0;font-weight:400;">
+              Wreckingball.ai is your digital force—precision-engineered to break down barriers and automate everything.
+            </p>
+            <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
+              <a href="#contact" class="wbai-btn-primary" style="background:#00CFFF;color:#000000;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.4);">
+                CONTACT US
+              </a>
+              <a href="#quote" class="wbai-btn-secondary" style="background:transparent;color:#ffffff;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border:2px solid #00CFFF;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.2);">
+                GET A QUOTATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

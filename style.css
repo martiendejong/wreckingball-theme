@@ -1060,13 +1060,13 @@ body {
 }
 
 .wbai-ball {
-  animation: rotate 20s linear infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 .wbai-ball:hover {
   animation-play-state: paused;
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 60px rgba(0,207,255,0.6);
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 40px rgba(0,207,255,0.8)) !important;
 }
 
 .wbai-btn-primary:hover {

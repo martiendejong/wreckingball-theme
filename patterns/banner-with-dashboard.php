@@ -23,21 +23,16 @@
   <div style="position:relative;z-index:2;padding:80px 0;max-width:1200px;margin:0 auto;">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:60px;padding:0 40px;">
       
-      <!-- Left Side: 3D Wrecking Ball -->
+      <!-- Left Side: Wrecking Ball Image -->
       <div class="wbai-wrecking-ball" style="flex:0 0 400px;display:flex;justify-content:center;align-items:center;position:relative;">
-        <div style="position:relative;width:350px;height:350px;">
-          <!-- Chain -->
-          <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:4px;height:120px;background:linear-gradient(to bottom, #333 0%, #666 50%, #333 100%);border-radius:2px;box-shadow:0 0 10px rgba(0,207,255,0.3);"></div>
-          
-          <!-- Wrecking Ball -->
-          <div class="wbai-ball" style="position:absolute;top:120px;left:50%;transform:translateX(-50%);width:200px;height:200px;background:linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%);border-radius:50%;box-shadow:inset 0 0 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,207,255,0.4);position:relative;overflow:hidden;">
-            <!-- Hexagonal facets with neon glow -->
-            <div style="position:absolute;top:20%;left:15%;width:30px;height:30px;background:rgba(0,207,255,0.8);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 15px rgba(0,207,255,0.9);"></div>
-            <div style="position:absolute;top:40%;left:25%;width:25px;height:25px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 12px rgba(0,207,255,0.7);"></div>
-            <div style="position:absolute;top:60%;left:35%;width:20px;height:20px;background:rgba(0,207,255,0.7);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 10px rgba(0,207,255,0.8);"></div>
-            <div style="position:absolute;top:30%;right:20%;width:28px;height:28px;background:rgba(0,207,255,0.5);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 14px rgba(0,207,255,0.6);"></div>
-            <div style="position:absolute;bottom:25%;right:30%;width:22px;height:22px;background:rgba(0,207,255,0.6);clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);box-shadow:0 0 11px rgba(0,207,255,0.7);"></div>
-          </div>
+        <div style="position:relative;width:350px;height:350px;display:flex;justify-content:center;align-items:center;">
+          <!-- Wrecking Ball Image -->
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero_wreckingball.png" 
+               alt="Wreckingball AI" 
+               class="wbai-ball"
+               style="width:300px;height:auto;filter:drop-shadow(0 0 30px rgba(0,207,255,0.6));transition:all 0.3s ease;"
+               onmouseover="this.style.transform='scale(1.05)'; this.style.filter='drop-shadow(0 0 40px rgba(0,207,255,0.8))'"
+               onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 0 30px rgba(0,207,255,0.6))'">
         </div>
       </div>
       
@@ -57,6 +52,9 @@
           </a>
           <a href="#quote" class="wbai-btn-secondary" style="background:transparent;color:#ffffff;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border:2px solid #00CFFF;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.2);">
             GET A QUOTATION
+          </a>
+          <a href="<?php echo esc_url( home_url('/team/') ); ?>" class="wbai-btn-secondary" style="background:transparent;color:#ffffff;font-family:'Inter','Montserrat',Arial,sans-serif;font-size:1.1rem;font-weight:700;padding:16px 32px;border:2px solid #00CFFF;border-radius:8px;text-decoration:none;transition:all 0.3s ease;display:inline-block;box-shadow:0 0 20px rgba(0,207,255,0.2);">
+            MEET THE TEAM
           </a>
         </div>
       </div>
